@@ -9,6 +9,7 @@
 <a href="/add">Add User</a>
 <table border="1px">
     <tr>
+        <td>Id</td>
         <td>Name</td>
         <td>Surname</td>
         <td>Email</td>
@@ -16,11 +17,13 @@
     </tr>
     <c:forEach var="user" items="${allUsers}">
         <tr>
+            <td>${user.id}</td>
             <td>${user.name}</td>
             <td>${user.surname}</td>
             <td>${user.email}</td>
-            <td><a href="/updateUser">Update User</a> </td>
-            <td><a href="/deleteUser">Delete User</a> </td>
+            <td><a href="/edit/${user.id}">Update User</a> </td>
+            <td><a href="/delete/${user.id}">Delete User</a>
+
         </tr>
     </c:forEach>
 </table>
