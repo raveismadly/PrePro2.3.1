@@ -6,7 +6,7 @@
     <title>Users</title>
 </head>
 <body>
-<a href="addUser.jsp">Add User</a>
+<a href="/add">Add User</a>
 <table border="1px">
     <tr>
         <td>Name</td>
